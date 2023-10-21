@@ -1,0 +1,29 @@
+# Comandos executados no https://colab.research.google.com/
+# Laço de repetição usando for
+# Caso 1 - for
+
+for i in range(20,0, -1):
+  if i !=13:
+    print("Andar", i)
+
+# Caso 2 - while
+# numero -= 1 ou numero = numero - 1. Abreviação: numero -=1 
+
+numero = 20
+
+while (numero >= 1):
+    if(numero != 13):
+        print("Andar", numero)
+    numero -= 1
+
+# Caso 3 - While combinado com continue e break
+
+numero = 21
+
+while(numero > 0):
+    numero = numero - 1 # ou o código numero -=1   
+    if(numero == 13):
+        continue # função usada para finalizar a execução atual e pular para próxima interação do loop
+    elif(numero == 0):
+        break # função usada para parar o loop
+    print("Andar", numero)
