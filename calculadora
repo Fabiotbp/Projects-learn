@@ -17,3 +17,30 @@ def calculadora(num1, num2, operacao):
        return  0
 resultado = calculadora(20, 5, 2)
 print(resultado)
+
+
+# Calculadora interativa
+
+def calculadora(num1, num2, operacao):
+  if(operacao == 1):
+    return num1 + num2
+  if(operacao == 2):
+    return num1 - num2
+  if(operacao == 3):
+    return num1 * num2
+  elif(operacao == 4):
+      if num2 != 0:
+          return num1 / num2
+      else:
+          return "Erro: divisão por zero"
+  else:
+       return  0
+#resultado = calculadora(20, 5, 2)
+#print(resultado)
+
+num1 = float(input("Digite o primeiro número:"))
+num2 = float(input("Digite o segundo número:"))
+operacao = int(input("Digite a operacao (1 - Soma, 2 Subtração, 3 Multiplicação, 4 Divisão):"))
+
+resultado = calculadora(num1, num2, operacao)
+print("O resultado da operação é:", resultado)
